@@ -2,7 +2,7 @@
 This multilabel classification task was completed as an assignment in Machine Learning course and a [kaggle competition](https://www.kaggle.com/competitions/kmaml223), using the dataset provided in the competition.
 The model estimates probabilities of sentence belonging to any of 6 categories:
 ```
-[toxic, severe_toxic, obscene	threat, insult, identity_hate]
+[toxic, severe_toxic, obscene, threat, insult, identity_hate]
 ```
 
 <br>
@@ -34,4 +34,6 @@ The model used in this solution is XGBoost Booster model. The trained model has 
 |Accuracy|	Precision|	Recall|	F1	|AUC|
 |--------|---------|------|----|---|
 |0	|0.917249	|0.854725	|0.539923	|0.659374	|0.969175|
+
+
 The weights are stored under `models/xgb-v<latest_version>.json`, and can be loaded using `xgb.Booster().load_model(<filepath>)`.
