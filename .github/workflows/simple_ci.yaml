@@ -24,8 +24,9 @@ jobs:
         pip install -r requirements.txt
 
     - name: Check code style with Ruff
-      run: |
-        ruff --include ./src/
+      uses: chartboost/ruff-action@v1
+      with:
+        src: "./src"
 
     - name: Run tests
       run: |
