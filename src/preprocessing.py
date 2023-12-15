@@ -3,7 +3,7 @@ import pickle
 
 import numpy as np
 
-from config import random_state, num_clusters, random_state, num_clusters
+from config import random_state, num_clusters
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.preprocessing import MinMaxScaler
