@@ -3,7 +3,7 @@ import pickle
 
 import numpy as np
 
-from config import *
+from config import random_state, num_clusters, random_state, num_clusters
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.preprocessing import MinMaxScaler
@@ -134,7 +134,6 @@ def select_features(X, feature_names, selector):
         - ArrayLike: Selected features names.    
         - ArrayLike: Selected features scores. 
     """
-    n_features = X.shape[1]
 
     # Initialize selector
     if isinstance(selector, str):
