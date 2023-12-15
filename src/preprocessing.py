@@ -11,16 +11,6 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 
 def clean_text(text):
-    """
-    Remove special characters from text, replacing them sith sesparators.
-    Keep emojies.
-
-    Parameters:
-    - text (str): The text to be formated.
-
-    Returns:
-    str: The formated text.
-    """
     text = text.lower()
 
     # Replace special characters with spaces
