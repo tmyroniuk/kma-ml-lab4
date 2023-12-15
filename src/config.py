@@ -1,10 +1,10 @@
 import configparser
 
 training_config = configparser.ConfigParser()
-training_config.read('../config/training-v3.ini')
+training_config.read('./config/training-v3.ini')
 
 base_config = configparser.ConfigParser()
-base_config.read('../config/config.ini')
+base_config.read('./config/config.ini')
 
 # Training
 test_size = float(training_config['Training']['test_size'])
