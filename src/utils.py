@@ -3,8 +3,7 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 
-from config import random_state, use_feature_selection
-from config import tfidf_vectorizer_model, selector_model, pca_model, scaler_model, kmeans_model
+from config import random_state, use_feature_selection, tfidf_vectorizer_model, selector_model, pca_model, scaler_model, kmeans_model
 from preprocessing import clean_text, vectorize, select_features, reduce_dimentions, scale, predict_kmeans
 from sklearn.cluster import KMeans
 
